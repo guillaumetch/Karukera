@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1">
+    <title>Karukera</title>
+    <link type="text/css" rel="stylesheet" href="../dist/css/onepage.css"/>
+    <link type="text/css" rel="stylesheet" href="../dist/css/swiper.min.css">
+</head>
+<body>
+<header class="header">
+    <h1>KARUKERA</h1>
+</header>
+<hr>
+<div class="intro">
+    <img src="../dist/img/Carte-Guadeloupe-9-large.jpg" alt="Photo de la plage du Moule">
+<p>Historiquement, la Basse-Terre est d'abord nommée « Karukéra » (« île aux belles eaux », en langue caraïbe) par les Amérindiens qui l'habitent et la Grande-Terre,« Cibuqueira » (« île aux gommiers », en langue caraïbe).<br/><br/>
+    La Rivière Salée, bras de mer qui les sépare coupant la Guadeloupe en deux, était appelée « aboukétoutou » qui signifiait « détroit ».<br/><br/>
+    L'île prend le nom de Guadeloupe lorsque Christophe Colomb y aborde le 4 novembre 1493, en hommage à la Vierge protectrice des navigateurs, « Santa-Maria de Guadalupe  ».</p>
+</div>
+<hr>
+<div class="photos">
+    <h2>Photos</h2>
+    <div class="swiper-container">
+
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"><h3>La Soufrière</h3><img src="../dist/img/soufriere_large.jpg" alt="Photo de la soufrière"></div>
+            <div class="swiper-slide"><h3>La plade du Moule</h3><img src="../dist/img/plage_le_moule_large.jpg" alt="Photo de la soufrière"></div>
+            <div class="swiper-slide"><h3>La Réserve Cousteau</h3><img src="../dist/img/rsv_cousteau_large.jpg" alt="Photo de la réserve cousteau"></div>
+        </div>
+
+        <div class="swiper-pagination"></div>
+
+    </div>
+</div>
+<br/>
+<hr>
+<div class="video">
+    <h3>Vidéo</h3>
+<iframe id="ytplayer" type="text/html"
+        src="http://www.youtube.com/embed/KWOPReGEvd4?autoplay=0"
+        frameborder="0" allowfullscreen></iframe>
+</div>
+<div class="footer">
+    <p>KARUKERA - Tous droits réservés</p>
+</div>
+
+<script type="text/javascript" src="../dist/js/jquery-3.0.0.min.js"></script>
+<script type="text/javascript" src="../dist/js/swiper.jquery.min.js"></script>
+<script>
+    var mySwiper = new Swiper ('.swiper-container', {
+        // Optional parameters
+        direction: 'horizontal',
+        // If we need pagination
+        pagination: '.swiper-pagination'
+
+    })
+</script>
+
+</body>
+</html>

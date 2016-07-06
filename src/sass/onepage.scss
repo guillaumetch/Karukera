@@ -1,0 +1,141 @@
+/**Variables***/
+$tablet: "only screen and (min-width: 480px) and (max-width: 1023px)";
+$desktop: "only screen and (min-width: 1024px)";
+
+
+@font-face {
+  font-family: 'Conv_KGMissKindyChunky';
+  src: url('../../dist/fonts/KGMissKindyChunky.eot');
+  src: local('☺'), url('../../dist/fonts/KGMissKindyChunky.woff') format('woff'), url('../../dist/fonts/KGMissKindyChunky.ttf') format('truetype'), url('../../dist/fonts/KGMissKindyChunky.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.header{
+  font-family: 'Conv_KGMissKindyChunky';
+  width:100%;
+  text-align: center;
+}
+
+.intro{
+  font-family: "Arial Black";
+  font-size: 0.7em;
+  text-align: justify;
+  img{
+    width:100%;
+  }
+}
+
+.photos{
+  img{
+    width:100%;
+    heigth:320px;
+  }
+
+}
+.video{
+  #ytplayer{
+    width:100%;
+    height:240px;
+  }
+}
+
+.footer{
+
+  text-align:center;
+  width:100%;
+}
+
+@media #{$tablet}{
+  .intro{
+    img{
+      width:100%;
+      height:360px;
+    }
+  }
+  .photos{
+    width:100%;
+    img{
+      width:100%;
+      height:360px;
+    }
+
+  }
+}
+
+@media #{$desktop}{
+  body{width:80%;
+    margin-left: auto;
+    margin-right:auto;
+    hr{
+      width:80%;
+    }
+    h2{
+      font-size: 2em;
+    }
+
+  }
+  .header{
+    h1{
+      font-size: 5em;
+    }
+  }
+
+  .intro{
+
+    img{
+      display:block;
+      width:50%;
+      height:480px;
+      margin-left: auto;
+      margin-right:auto;
+    }
+    p{
+      font-size: 2em;
+      width:80%;
+      margin-left: auto;
+      margin-right:auto;
+    }
+  }
+
+  .photos{
+    width:80%;
+    margin-left:auto;
+    margin-right: auto;
+    img{
+      display:block;
+      width:70%;
+      height:640px;
+      margin-left: auto;
+      margin-right:auto;
+    }
+    h3{
+      font-size: 2em;
+      text-align: center;
+    }
+
+  }
+
+  .video{
+    width:80%;
+    margin-left: auto;
+    margin-right: auto;
+    h3{
+      font-size: 2em;
+
+    }
+    #ytplayer{
+      width:100%;
+      height:640px;
+    }
+  }
+
+  .footer{
+    width:80%;
+    margin-left:auto;
+    margin-right: auto;
+    font-size: 1.5em;
+  }
+}
+
+
